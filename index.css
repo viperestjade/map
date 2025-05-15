@@ -1,0 +1,143 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(332deg, rgba(254,254,254,0.7) 0%, rgba(255,255,255,0.9) 50%), url(https://images.unsplash.com/photo-1494949649109-ecfc3b8c35df);
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto; 
+    min-height: 100vh;
+}
+
+
+.map {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+.map img.main-map  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 75px;
+    border-radius: 65px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.overlay {
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: auto; 
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+.map img.marker12  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker1  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker14  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker13  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker3  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker7  {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map img.marker19 {
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 70px;
+    border-radius: 60px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* Positioning each marker */
+.marker1  { top: 57.8%; left: 42.7%; width: 50px; } /* 4 Pillars */
+.marker2  { top: 70%; left: 19%; width: 94px; }    /* Gym */
+.marker3  { top: 30.5%; left: 50.7%; width: 50px; } /* Bonoan */
+.marker4  { top: 22.4%; left: 42.7%; width: 51px; } /* Library */
+.marker5  { top: 26.4%; left: 61%; width: 50px; } /* Alingal */
+.marker6  { top: 21.8%; left: 51.2%;  width: 50px; } /* RF Hall */ 
+.marker7  { top: 12%; left: 52%; width: 49.3px;} /* Arrupe */
+.marker8  { top: 57.1%; left: 27.6%; width: 49.3px;} /* Phelan */
+.marker9  { top: 57.1%; left: 34.35%; width: 37.6px;} /* Santos */
+.marker10 { top: 57.1%; left: 51.55%; width: 49.2px;} /* Burns */
+.marker11 { top: 57%; left: 56.5%; width: 49.2px;} /* Madrigal */
+.marker12 { top: 71.5%; left: 31%; width: 70px; } /* Xavier Hall */
+.marker13 { top: 72.8%; left: 51.8%; width: 57px } /* Church */
+.marker14 { top: 24%; left: 24.1%; width: 57px;} /* Dolan */
+.marker15 { top: 29%; left: 16.5%; width: 49.8px; }  /* Engineering */
+.marker16 { top: 42%; left: 16.5%; width: 49px; } /* SHS */
+.marker17 { top: 34.1%; left: 71.5%; width: 123px; } /* CC */
+.marker18 { top: 13%; left: 15.5%; width: 75px;}  /* PPA */
+.marker19 { top: 27%; left: 33%; width: 50px;}  /* Adriatico */
+
+/* Responsive Adjustments */
+@media (max-width: 1043px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_contents li {
+        padding: 0;
+    }
+    a {
+        padding: 10px 6px;
+    }
+    header {
+        padding: 10px 1%;
+    }
+}
